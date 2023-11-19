@@ -136,3 +136,11 @@
 //     console.log('go home');
 // }
 // console.log(club);
+
+//wrong
+// let answ = prompt('what is your name ?').toLowerCase().trim()
+// let club = answ[0] == "a" ? answ + alert("next question") : answ + alert("i don't know you")
+// let age = answ == "next qustion" ? prompt('how old are you') : alert(club)
+// let question = age > 19 && age < 41 ? age + alert('you can enter') : age + alert('ya can not enter')
+// let money = prompt('how much many do you have') 
+// let take = money >= 100 ? alert('good') : alert('bad')
