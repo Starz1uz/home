@@ -423,3 +423,40 @@
 // });
 
 // console.log(emails);
+
+let cars = [
+
+     {
+        company: 'BMW',
+        name: 'm5 f90 competation',
+        price: 220000,
+        year: 2018,
+    },
+   {
+        company: 'mercedec Benz',
+        name: 'Banan',
+        price: 190000,
+        year: 2016,
+    },
+    {
+        company: 'Rolls Roys',
+        name: 'Black Angel',
+        price: 290000,
+        year: 2022,
+    },
+     {
+        company: 'Chevrolet',
+        name: 'Gentra',
+        price: 16000,
+        year: 2023,
+    },
+
+
+]
+
+let ask = +prompt("price")
+let asked = cars.filter(item => {
+    if (item.price <= ask)
+    console.log(item);
+})
+console.log(cars);
