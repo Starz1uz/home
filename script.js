@@ -459,4 +459,4 @@ let asked = cars.filter(item => {
     if (item.price <= ask)
     console.log(item);
 })
-console.log(cars);
+console.log(cars,ask);
