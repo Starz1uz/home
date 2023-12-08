@@ -715,34 +715,53 @@
 // )
 
 // console.log(emails,other);
- let cars = [
+ // let cars = [
 
-         {
-            company: 'BMW',
-            name: 'm5 f90 competation',
-            price: 220000,
-            year: 2018,
-        },
-       {
-            company: 'mercedec Benz',
-            name: 'Banan',
-            price: 190000,
-            year: 2016,
-        },
-        {
-            company: 'Rolls Roys',
-            name: 'Black Angel',
-            price: 290000,
-            year: 2022,
-        },
-         {
-            company: 'Chevrolet',
-            name: 'Gentra',
-            price: 16000,
-            year: 2023,
-        },
- ]
+ //         {
+ //            company: 'BMW',
+ //            name: 'm5 f90 competation',
+ //            price: 220000,
+ //            year: 2018,
+ //        },
+ //       {
+ //            company: 'mercedec Benz',
+ //            name: 'Banan',
+ //            price: 190000,
+ //            year: 2016,
+ //        },
+ //        {
+ //            company: 'Rolls Roys',
+ //            name: 'Black Angel',
+ //            price: 290000,
+ //            year: 2022,
+ //        },
+ //         {
+ //            company: 'Chevrolet',
+ //            name: 'Gentra',
+ //            price: 16000,
+ //            year: 2023,
+ //        },
+ // ]
 
- let discaunt = prompt('Discount')
- let find = cars.filter(item => item.price = item.price /100 * discaunt)
- console.log(find);
+ // let discaunt = prompt('Discount')
+ // let find = cars.filter(item => item.price = item.price /100 * discaunt)
+ // console.log(find);
+// classWork === HomeWork
+
+let password = '000'
+let user;
+let min = 0
+let max = 5
+
+do {
+    user = prompt('Your password')
+    if (user !== password) {
+        min++
+        alert('Вы ввели НЕ правильный пароль!')
+    }
+} while (user !== password && min < max)
+if (user === password) {
+    alert('Вы ввели правильный пароль!');
+} else {
+    alert('Превышено количество попыток. Доступ заблокирован.');
+}
