@@ -768,129 +768,129 @@
 
 
 // home work 
-let arr = [
-    {
-        id: Math.random(),
-        name: 'Timur',
-        info: {
-            school: '235',
-            faculity: 'SMM'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Imran',
-        info: {
-            school: 'ne izvestno',
-            faculity: 'programming'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Aminjon',
-        info: {
-            school: '444',
-            faculity: 'Dizayn'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Muxammad',
-        info: {
-            school: '5555',
-            faculity: 'Backend'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Timur',
-        info: {
-            school: '235',
-            faculity: 'SMM'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Imran',
-        info: {
-            school: 'ne izvestno',
-            faculity: 'programming'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Aminjon',
-        info: {
-            school: '444',
-            faculity: 'Dizayn'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Muxammad',
-        info: {
-            school: '5555',
-            faculity: 'Backend'
-        },
-    },
-]
+// let arr = [
+//     {
+//         id: Math.random(),
+//         name: 'Timur',
+//         info: {
+//             school: '235',
+//             faculity: 'SMM'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Imran',
+//         info: {
+//             school: 'ne izvestno',
+//             faculity: 'programming'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Aminjon',
+//         info: {
+//             school: '444',
+//             faculity: 'Dizayn'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Maxmud',
+//         info: {
+//             school: '777',
+//             faculity: '3dsmax'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Muxammad',
+//         info: {
+//             school: '5555',
+//             faculity: 'Backend'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Timur',
+//         info: {
+//             school: '235',
+//             faculity: 'SMM'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Imran',
+//         info: {
+//             school: 'ne izvestno',
+//             faculity: 'programming'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Aminjon',
+//         info: {
+//             school: '444',
+//             faculity: 'Dizayn'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Maxmud',
+//         info: {
+//             school: '777',
+//             faculity: '3dsmax'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Maxmud',
+//         info: {
+//             school: '777',
+//             faculity: '3dsmax'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Muxammad',
+//         info: {
+//             school: '5555',
+//             faculity: 'Backend'
+//         },
+//     },
+// ]
 
-let categories = [
-    {
-        course: ' SMM',
-        count: 0
-    },
-    {
-        course: 'PROGRAMMING',
-        count: 0
-    },
-    {
-        course: '3DSMAX',
-        count: 0
-    },
-    {
-        course: ' DIZAYN',
-        count: 0
-    },
-    {
-        course: '   BACKEND',
-        count: 0
-    },
-]
+// let categories = [
+//     {
+//         course: ' SMM',
+//         count: 0
+//     },
+//     {
+//         course: 'PROGRAMMING',
+//         count: 0
+//     },
+//     {
+//         course: '3DSMAX',
+//         count: 0
+//     },
+//     {
+//         course: ' DIZAYN',
+//         count: 0
+//     },
+//     {
+//         course: '   BACKEND',
+//         count: 0
+//     },
+// ]
 
-for (let i = 0; i < arr.length; i++) {
-    let find = arr[i].info.faculity;
-    if (find[i] === categories.count) {
-        categories.push(i)
-    } else {
-        NaN
-    }
-}
-console.log(categories);
+// for (let i = 0; i < arr.length; i++) {
+//     let find = arr[i].info.faculity;
+//     if (find[i] === categories.count) {
+//         categories.push(i)
+//     } else {
+//         NaN
+//     }
+// }
+// console.log(categories);
 
 //mistake
 // switch (find) {
@@ -905,3 +905,76 @@ console.log(categories);
 //     case 'BACKEND':
 //         categories[4].count++
 // }
+
+let products = [
+    {
+        name: "tvorog",
+        type: "milk",
+        price: 10000
+    },
+    {
+        name: "apple",
+        type: "fruit",
+        price: 5000
+    },
+    {
+        name: "govyadina",
+        type: "meat",
+        price: 100000
+    },
+    {
+        name: "yogurt",
+        type: "milk",
+        price: 8000
+    },
+    {
+        name: "banan",
+        type: "fruit",
+        price: 20000
+    },
+    {
+        name: "kuryatina",
+        type: "meat",
+        price: 45000
+    },
+    {
+        name: "sir",
+        type: "milk",
+        price: 16000
+    },
+]
+
+let categories = [
+    {
+        name: "meat",
+        arr: [],
+        amount: 0,
+        total: 0
+    },
+    {
+        name: "milk",
+        arr: [],
+        amount: 0,
+        total: 0
+    },
+    {
+        name: "fruit",
+        arr: [],
+        amount: 0,
+        total: 0
+    },
+]
+
+// work
+for(let item of products){
+    let price = item.price
+
+    for(let category of categories){
+        if(item.type === category.name) {
+            category.amount++
+            category.arr.push(item.name)
+            category.total += price
+        }
+    }
+}
+console.table(categories);
