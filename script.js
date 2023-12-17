@@ -906,75 +906,146 @@
 //         categories[4].count++
 // }
 
-let products = [
+//home work 15.12.23(last-task)
+// let products = [
+//     {
+//         name: "tvorog",
+//         type: "milk",
+//         price: 10000
+//     },
+//     {
+//         name: "apple",
+//         type: "fruit",
+//         price: 5000
+//     },
+//     {
+//         name: "govyadina",
+//         type: "meat",
+//         price: 100000
+//     },
+//     {
+//         name: "yogurt",
+//         type: "milk",
+//         price: 8000
+//     },
+//     {
+//         name: "banan",
+//         type: "fruit",
+//         price: 20000
+//     },
+//     {
+//         name: "kuryatina",
+//         type: "meat",
+//         price: 45000
+//     },
+//     {
+//         name: "sir",
+//         type: "milk",
+//         price: 16000
+//     },
+// ]
+
+// let categories = [
+//     {
+//         name: "meat",
+//         arr: [],
+//         amount: 0,
+//         total: 0
+//     },
+//     {
+//         name: "milk",
+//         arr: [],
+//         amount: 0,
+//         total: 0
+//     },
+//     {
+//         name: "fruit",
+//         arr: [],
+//         amount: 0,
+//         total: 0
+//     },
+// ]
+
+// // work
+// for(let item of products){
+//     let price = item.price
+
+//     for(let category of categories){
+//         if(item.type === category.name) {
+//             category.amount++
+//             category.arr.push(item.name)
+//             category.total += price
+//         }
+//     }
+// }
+// console.table(categories);
+
+//home work
+let students = [
     {
-        name: "tvorog",
-        type: "milk",
-        price: 10000
+        name: "Hasan",
+        age: "2008-07-28",
+        gender: 'm'
     },
     {
-        name: "apple",
-        type: "fruit",
-        price: 5000
+        name: "Alsafir",
+        age: "2008-10-13",
+        gender: 'm'
     },
     {
-        name: "govyadina",
-        type: "meat",
-        price: 100000
+        name: "Allayor",
+        age: "2008-06-24",
+        gender: 'w'
     },
     {
-        name: "yogurt",
-        type: "milk",
-        price: 8000
+        name: "Radmir",
+        age: "2007-04-28",
+        gender: 'w'
     },
     {
-        name: "banan",
-        type: "fruit",
-        price: 20000
+        name: "Jaxongir",
+        age: "2006-09-03",
+        gender: 'm'
     },
     {
-        name: "kuryatina",
-        type: "meat",
-        price: 45000
+        name: "Bexruz",
+        age: "2007-11-27",
+        gender: 'w'
     },
     {
-        name: "sir",
-        type: "milk",
-        price: 16000
+        name: "Alibek",
+        age: "2006-04-12",
+        gender: 'm'
+    },
+    {
+        name: "Bexruz",
+        age: "2009-11-27",
+        gender: 'w'
+    },
+    {
+        name: "Alibek",
+        age: "2012-04-12",
+        gender: 'm'
     },
 ]
+let LongName = students[0].name
+let max = students[0].age
+let min = students[0].age
 
-let categories = [
-    {
-        name: "meat",
-        arr: [],
-        amount: 0,
-        total: 0
-    },
-    {
-        name: "milk",
-        arr: [],
-        amount: 0,
-        total: 0
-    },
-    {
-        name: "fruit",
-        arr: [],
-        amount: 0,
-        total: 0
-    },
-]
+for (let age of students) {
 
-// work
-for(let item of products){
-    let price = item.price
+    if (age.age < max) {
+        max = age.age
+    }
 
-    for(let category of categories){
-        if(item.type === category.name) {
-            category.amount++
-            category.arr.push(item.name)
-            category.total += price
-        }
+    if (age.age > min) {
+        min = age.age
+    }
+
+    if(LongName.length < students.length){
+        LongName = age.name
     }
 }
-console.table(categories);
+console.log('max',max);
+console.log('min',min);
+console.log('Your long name is', LongName);
