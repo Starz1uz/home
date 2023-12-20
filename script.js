@@ -981,71 +981,152 @@
 // console.table(categories);
 
 //home work
-let students = [
+// let students = [
+//     {
+//         name: "Hasan",
+//         age: "2008-07-28",
+//         gender: 'm'
+//     },
+//     {
+//         name: "Alsafir",
+//         age: "2008-10-13",
+//         gender: 'm'
+//     },
+//     {
+//         name: "Allayor",
+//         age: "2008-06-24",
+//         gender: 'w'
+//     },
+//     {
+//         name: "Radmir",
+//         age: "2007-04-28",
+//         gender: 'w'
+//     },
+//     {
+//         name: "Jaxongir",
+//         age: "2006-09-03",
+//         gender: 'm'
+//     },
+//     {
+//         name: "Bexruz",
+//         age: "2007-11-27",
+//         gender: 'w'
+//     },
+//     {
+//         name: "Alibek",
+//         age: "2006-04-12",
+//         gender: 'm'
+//     },
+//     {
+//         name: "Bexruz",
+//         age: "2009-11-27",
+//         gender: 'w'
+//     },
+//     {
+//         name: "Alibek",
+//         age: "2012-04-12",
+//         gender: 'm'
+//     },
+// ]
+// let LongName = students[0].name
+// let max = students[0].age
+// let min = students[0].age
+
+// for (let age of students) {
+
+//     if (age.age < max) {
+//         max = age.age
+//     }
+
+//     if (age.age > min) {
+//         min = age.age
+//     }
+
+//     if(LongName.length < students.length){
+//         LongName = age.name
+//     }
+// }
+// console.log('max',max);
+// console.log('min',min);
+// console.log('Your long name is', LongName);
+let businessmen = [
     {
         name: "Hasan",
         age: "2008-07-28",
-        gender: 'm'
+        gender: 'm',
+        tax: 12,
+        budget: 1000,
+        expensesPerYear: [200, 100, 50]
     },
     {
         name: "Alsafir",
         age: "2008-10-13",
-        gender: 'm'
+        gender: 'm',
+        tax: 9,
+        budget: 2500,
+        expensesPerYear: [200, 500, 50]
     },
     {
         name: "Allayor",
         age: "2008-06-24",
-        gender: 'w'
+        gender: 'w',
+        tax: 12,
+        budget: 2000,
+        expensesPerYear: [200, 100, 120]
     },
     {
         name: "Radmir",
         age: "2007-04-28",
-        gender: 'w'
+        gender: 'w',
+        tax: 5,
+        budget: 4000,
+        expensesPerYear: [200, 1000, 500]
     },
     {
         name: "Jaxongir",
         age: "2006-09-03",
-        gender: 'm'
+        gender: 'm',
+        tax: 13,
+        budget: 3000,
+        expensesPerYear: [200, 100, 1200]
     },
     {
         name: "Bexruz",
         age: "2007-11-27",
-        gender: 'w'
+        gender: 'w',
+        tax: 9,
+        budget: 2400,
+        expensesPerYear: [200, 100, 900]
     },
     {
         name: "Alibek",
         age: "2006-04-12",
-        gender: 'm'
-    },
-    {
-        name: "Bexruz",
-        age: "2009-11-27",
-        gender: 'w'
-    },
-    {
-        name: "Alibek",
-        age: "2012-04-12",
-        gender: 'm'
-    },
+        gender: 'm',
+        tax: 15,
+        budget: 4200,
+        expensesPerYear: [200, 100, 2000]
+    }
 ]
-let LongName = students[0].name
-let max = students[0].age
-let min = students[0].age
+// let many = 0
+// for(let expenses of businessmen){
+//     many += expenses.expensesPerYear.reduce((a, b) => a + b / 12);
 
-for (let age of students) {
+//     console.log(many);
+// }
 
-    if (age.age < max) {
-        max = age.age
+//home_task
+for (let item of businessmen) {
+    let total = 0
+    for (let expensive of item.expensesPerYear) {
+        total += Math.round(expensive / 12)
     }
-
-    if (age.age > min) {
-        min = age.age
-    }
-
-    if(LongName.length < students.length){
-        LongName = age.name
-    }
+    item.expensesPerMonth = total
+    let budget_per_month = Math.round(item.budget / 12)
+    let find = Math.round(total + budget_per_month)
+    // let price = (total / budget_per_month) *100
+    console.log(find);
 }
-console.log('max',max);
-console.log('min',min);
-console.log('Your long name is', LongName);
+
+// for(let i = 0; i = -1; i++){
+//     console.log(i);
+// }
