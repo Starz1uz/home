@@ -1049,84 +1049,184 @@
 // console.log('max',max);
 // console.log('min',min);
 // console.log('Your long name is', LongName);
-let businessmen = [
-    {
-        name: "Hasan",
-        age: "2008-07-28",
-        gender: 'm',
-        tax: 12,
-        budget: 1000,
-        expensesPerYear: [200, 100, 50]
-    },
-    {
-        name: "Alsafir",
-        age: "2008-10-13",
-        gender: 'm',
-        tax: 9,
-        budget: 2500,
-        expensesPerYear: [200, 500, 50]
-    },
-    {
-        name: "Allayor",
-        age: "2008-06-24",
-        gender: 'w',
-        tax: 12,
-        budget: 2000,
-        expensesPerYear: [200, 100, 120]
-    },
-    {
-        name: "Radmir",
-        age: "2007-04-28",
-        gender: 'w',
-        tax: 5,
-        budget: 4000,
-        expensesPerYear: [200, 1000, 500]
-    },
-    {
-        name: "Jaxongir",
-        age: "2006-09-03",
-        gender: 'm',
-        tax: 13,
-        budget: 3000,
-        expensesPerYear: [200, 100, 1200]
-    },
-    {
-        name: "Bexruz",
-        age: "2007-11-27",
-        gender: 'w',
-        tax: 9,
-        budget: 2400,
-        expensesPerYear: [200, 100, 900]
-    },
-    {
-        name: "Alibek",
-        age: "2006-04-12",
-        gender: 'm',
-        tax: 15,
-        budget: 4200,
-        expensesPerYear: [200, 100, 2000]
-    }
-]
-// let many = 0
-// for(let expenses of businessmen){
-//     many += expenses.expensesPerYear.reduce((a, b) => a + b / 12);
+// let businessmen = [
+//     {
+//         name: "Hasan",
+//         age: "2008-07-28",
+//         gender: 'm',
+//         tax: 12,
+//         budget: 1000,
+//         expensesPerYear: [200, 100, 50]
+//     },
+//     {
+//         name: "Alsafir",
+//         age: "2008-10-13",
+//         gender: 'm',
+//         tax: 9,
+//         budget: 2500,
+//         expensesPerYear: [200, 500, 50]
+//     },
+//     {
+//         name: "Allayor",
+//         age: "2008-06-24",
+//         gender: 'w',
+//         tax: 12,
+//         budget: 2000,
+//         expensesPerYear: [200, 100, 120]
+//     },
+//     {
+//         name: "Radmir",
+//         age: "2007-04-28",
+//         gender: 'w',
+//         tax: 5,
+//         budget: 4000,
+//         expensesPerYear: [200, 1000, 500]
+//     },
+//     {
+//         name: "Jaxongir",
+//         age: "2006-09-03",
+//         gender: 'm',
+//         tax: 13,
+//         budget: 3000,
+//         expensesPerYear: [200, 100, 1200]
+//     },
+//     {
+//         name: "Bexruz",
+//         age: "2007-11-27",
+//         gender: 'w',
+//         tax: 9,
+//         budget: 2400,
+//         expensesPerYear: [200, 100, 900]
+//     },
+//     {
+//         name: "Alibek",
+//         age: "2006-04-12",
+//         gender: 'm',
+//         tax: 15,
+//         budget: 4200,
+//         expensesPerYear: [200, 100, 2000]
+//     }
+// ]
+// // let many = 0
+// // for(let expenses of businessmen){
+// //     many += expenses.expensesPerYear.reduce((a, b) => a + b / 12);
 
-//     console.log(many);
+// //     console.log(many);
+// // }
+
+// //home_task
+// for (let item of businessmen) {
+//     let total = 0
+//     for (let expensive of item.expensesPerYear) {
+//         total += Math.round(expensive / 12)
+//     }
+//     item.expensesPerMonth = total
+//     let budget_per_month = Math.round(item.budget / 12)
+//     let find = Math.round(total + budget_per_month)
+//     // let price = (total / budget_per_month) *100
+//     console.log(find);
 // }
 
-//home_task
-for (let item of businessmen) {
-    let total = 0
-    for (let expensive of item.expensesPerYear) {
-        total += Math.round(expensive / 12)
-    }
-    item.expensesPerMonth = total
-    let budget_per_month = Math.round(item.budget / 12)
-    let find = Math.round(total + budget_per_month)
-    // let price = (total / budget_per_month) *100
-    console.log(find);
+// // for(let i = 0; i = -1; i++){
+// //     console.log(i);
+// // }
+// correct
+// let businessmen = [
+//     {
+//         name: "Hasan",
+//         age: "2008-07-28",
+//         gender: 'm',
+//         tax: 12,
+//         budget: 1000,
+//         expensesPerYear: [200, 100, 50]
+//     },
+//     {
+//         name: "Alsafir",
+//         age: "2008-10-13",
+//         gender: 'm',
+//         tax: 9,
+//         budget: 2500,
+//         expensesPerYear: [200, 500, 50]
+//     },
+//     {
+//         name: "Allayor",
+//         age: "2008-06-24",
+//         gender: 'w',
+//         tax: 12,
+//         budget: 2000,
+//         expensesPerYear: [200, 100, 120]
+//     },
+//     {
+//         name: "Radmir",
+//         age: "2007-04-28",
+//         gender: 'w',
+//         tax: 5,
+//         budget: 4000,
+//         expensesPerYear: [200, 1000, 500]
+//     },
+//     {
+//         name: "Jaxongir",
+//         age: "2006-09-03",
+//         gender: 'm',
+//         tax: 13,
+//         budget: 3000,
+//         expensesPerYear: [200, 100, 1200]
+//     },
+//     {
+//         name: "Bexruz",
+//         age: "2007-11-27",
+//         gender: 'w',
+//         tax: 9,
+//         budget: 2400,
+//         expensesPerYear: [200, 100, 900]
+//     },
+//     {
+//         name: "Alibek",
+//         age: "2006-04-12",
+//         gender: 'm',
+//         tax: 15,
+//         budget: 4200,
+//         expensesPerYear: [200, 100, 2000]
+//     }
+// ]
+// let succsesful = []
+// let unsuccsesfull = []
+// let TotalTaxes = 0
+
+// for (let item of businessmen) {
+//     item.expensesPerMonth = 0
+//     for (let expense of item.expensesPerYear) {
+//         item.expensesPerMonth += Math.round(expense / 12)
+//     }
+//     item.percentege = Math.round(item.expensesPerMonth * 100 / (item.budget / 12)) + '%'
+//     let total = (item.budget / 12) - ((item.tax * (item.budget / 12) / 100) + item.expensesPerMonth)
+//     if (total < 0) {
+//         unsuccsesfull.push(item.name)
+//     } else {
+//         succsesful.push(item.name)
+//     }
+
+// }
+// console.table(TotalTaxes);
+
+// // tables for math
+// for(let i = 1; i <= 10; i++){
+//     for(let k = 1; k <= 10; k++){
+//         document.write(`${i} * ${k} = ${i * k} <br/>`)
+//     }
+
+//     document.write('<hr/>')
+// }
+// for(let i = 5; i >= 1; i--){
+//     for(let k = 0; k < i; k++){
+//         document.write('* ')
+//     }
+//     document.write('<br/>')
+// }
+
+//home-work
+let num = prompt('which number you want?')
+// let nn = [num]
+for(let i = 1; i <= num; i++) {
+    console.log(i);
 }
-
-// for(let i = 0; i = -1; i++){
-//     console.log(i);
-// }
